@@ -1,0 +1,100 @@
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>div模拟table布局</title>
+   
+</head>
+<body>
+    
+<style>
+  .container{
+    width:80%;
+    height:400px;
+    overflow:scroll;
+  }
+  .table {
+    position: relative;
+  }
+  .table .th,
+  .table .tr {
+    position: absolute;
+    border: 1px solid gray;
+    display: grid;
+    text-align:center;
+    /* grid-template-rows: 100px auto; */
+    grid-template-columns: 150px 150px auto 150px;
+  }
+
+  
+  </style>
+<div class="container">
+      <div class="table">
+  
+        <div class="th">
+            <div>
+              表头1
+            </div>
+            <div>
+              表头2
+            </div>
+            <div>
+              表头3
+            </div>
+            <div>
+              表头4
+            </div>
+
+        </div>
+  
+        <div class="tr">
+          <div>
+            数据行1 列1
+          </div>
+          <div>
+            数据行1 列2
+          </div>
+          <div>
+            数据行1 列3
+          </div>
+          <div>
+            数据行1 列4
+          </div>
+        </div>
+  
+        <div class="tr">
+          <div>
+            数据行1 列1
+          </div>
+          <div>
+            数据行1 列2
+          </div>
+          <div>
+            数据行1 列3
+          </div>
+          <div>
+            数据行1 列4
+          </div>
+        </div>
+
+        <div class="tr">
+          <div>
+            数据行1 列1
+          </div>
+          <div>
+            数据行1 列2
+          </div>
+          <div>
+            数据行1 列3
+          </div>
+          <div>
+            数据行1 列4
+          </div>
+        </div>
+
+
+      </div>
+</div>
+
+</body>
+</html>
